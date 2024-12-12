@@ -1,0 +1,59 @@
+:root{
+    --font:#DBE0E4;
+    --background:#16324F;
+    --header:#13293D;
+    --segundo:#18435A;
+    --tercero:#2D5469;
+    --cuarto:#406477;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+
+body{
+    margin: 15rem 10rem 15rem 10rem;
+    color: var(--font);
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    background-color: var(--background);
+}
+
+body h1{
+    margin: 2rem;
+}
+
+.servicios .navegacion-pr .formulario {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+h1{
+    font-size: 3.8rem;
+    text-align:center;
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    font-size: 2.8rem;
+    text-align:center;
+    margin: 0;
+    padding: 0;
+}
+
+h3{
+    font-size: 1.8rem;
+    text-align:center;
+    margin: 0;
+    padding: 0;
+}
