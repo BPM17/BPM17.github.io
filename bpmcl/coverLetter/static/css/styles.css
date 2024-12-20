@@ -22,10 +22,6 @@ body{
     background-color: var(--background);
 }
 
-body h1{
-    margin: 2rem;
-}
-
 .servicios .navegacion-pr .formulario {
     scroll-snap-align: center;
     scroll-snap-stop: always;
@@ -56,4 +52,16 @@ h3{
     text-align:center;
     margin: 0;
     padding: 0;
+}
+
+body h1{
+    margin: 2rem;
+}
+
+body h2{
+    margin: 2rem;
+}
+
+body h3{
+    margin: 1rem;
 }

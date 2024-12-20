@@ -14,8 +14,15 @@
         <h3>Below you will find development examples to show my abilities, 
             and demonstrate what technologies I've had the opportunity to work with</h3>
         <h2>Web development</h2>
-        <h3>To begin I want to show somem web development projects</h3>
-        
+        <h3>To begin I want to show you some web development projects I've made</h3>
+    </div>
+    <div>
+        {% if dbitems %}
+            {% for i in dbitems %}
+            {% endfor %}
+        {% else %}
+            <p>No items available</p>
+        {% endif %}
     </div>
     
 </body>
