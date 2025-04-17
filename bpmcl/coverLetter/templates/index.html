@@ -10,20 +10,22 @@
 </head>
 <body>
     <div>
-        <h1>Welcome to my cover letter</h1>
-        <h3>Below you will find development examples to show my abilities, 
-            and demonstrate what technologies I've had the opportunity to work with</h3>
-        <h2>Web development</h2>
-        <h3>To begin I want to show you some web development projects I've made</h3>
+        <h1>Hi and welcome to my cover letter!!!</h1>
+        <h3>Before start let me introduce, I'm a Communications and electronics engineer with interests in delving 
+            into programming areas, communications, and instrumentation, with experience in IT, OT and networks.By working well under pressure, self-taught, with commitment and professional initiative & willinga 
+            are some of my strenghts.I have been involved on the deveopment on several software tools.Several of these focused on facilitating and automating testing processes on automotive computers 
+            also I have had the opportunity to developed several websites using Python frameworks as django and flask.
+            Below you will find development examples to show my abilities, 
+            and demonstrate what technologies I've had the opportunity to work with.</h3>
     </div>
     <div>
-        {% if dbitems %}
-            {% for i in dbitems %}
-            {% endfor %}
-        {% else %}
-            <p>No items available</p>
-        {% endif %}
+        {% for exp in experience %}
+        <h3>{{exp.company}}</h4>
+        <p>{{exp.position}}</p>
+        <p>{{exp.timelaps}}</p>
+        <p>{{exp.description}}</p>
+        {% endfor %}
     </div>
-    
+
 </body>
 </html>

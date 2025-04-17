@@ -14,7 +14,7 @@ html {
 }
 
 body{
-    margin: 15rem 10rem 15rem 10rem;
+    margin: 10rem 30rem 10rem 30rem;
     color: var(--font);
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
@@ -49,9 +49,10 @@ h2{
 
 h3{
     font-size: 1.8rem;
-    text-align:center;
+    text-align: justify;
     margin: 0;
     padding: 0;
+    line-height: 2;
 }
 
 body h1{
@@ -64,4 +65,8 @@ body h2{
 
 body h3{
     margin: 1rem;
+}
+
+br{
+    line-height: 2;
 }
