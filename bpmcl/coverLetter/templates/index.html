@@ -12,7 +12,7 @@
     <div>
         <h1>Hi and welcome to my cover letter!!!</h1>
         <h3>Before start let me introduce, I'm a Communications and electronics engineer with interests in delving 
-            into programming areas, communications, and instrumentation, with experience in IT, OT and networks.By working well under pressure, self-taught, with commitment and professional initiative & willinga 
+            into programming areas, communications, and instrumentation, with experience in IT, OT and networks.By working well under pressure, self-taught, with commitment and professional initiative & willing 
             are some of my strenghts.I have been involved on the deveopment on several software tools.Several of these focused on facilitating and automating testing processes on automotive computers 
             also I have had the opportunity to developed several websites using Python frameworks as django and flask.
             Below you will find development examples to show my abilities, 
@@ -24,6 +24,17 @@
         <p>{{exp.position}}</p>
         <p>{{exp.timelaps}}</p>
         <p>{{exp.description}}</p>
+        {{ exp.description|pprint }}
+        {% endfor %}
+    </div>
+    <div>
+        {% for ed in education %}
+        <h3>{{ed.school}}</h3>
+        <p>{{ed.course}}</p>
+        {% if ed.image %}
+            <img src="{{ ed.image.url }}" alt="">
+        {% endif %}
+        <p>{{ed.description}}</p>
         {% endfor %}
     </div>
 
